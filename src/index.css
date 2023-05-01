@@ -1,13 +1,145 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+  margin:0px ;
+  padding: 0px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+hr{
+  width: 1000px;
+  margin-left: 120px;
+  margin-top: -15px;
+
+}
+
+.background{
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
+.background img{
+  width: 1349px;
+  opacity: 0.4;
+}
+
+.airplane{
+  width:1000px;
+  opacity: 0.2;
+  margin: 0px 0px 0px 100px;
+}
+
+.form-group{
+  z-index: 99;
+  margin: 0px 0px 0px 400px ;
+}
+
+.form-group input{
+  width: 500px;
+}
+
+h1{
+  margin: 20px 0px 0px 550px;
+}
+
+#sub-btn{
+  margin: 20px 0px 0px 400px;
+}
+
+
+
+/* DASHBOARD */
+
+.logoo{
+  width: 120px;
+}
+
+nav{
+  display: flex;
+  flex-direction: row;
+}
+
+.navbar-questions-solutions{
+  display: flex;
+  flex-direction: column;
+
+}
+
+.logo-div{
+  margin: 0px 0px 0px 20px;
+}
+
+#navbarSupportedContent{
+  margin: 5px 0px 0px 650px;
+}
+
+#navbarSupportedContent ul{
+  display: flex;
+  flex-direction: row;
+}
+
+#navbarSupportedContent a{
+  text-decoration: none;
+  margin: 0px 10px 0px 10px ;
+  padding: 7px 15px 7px 15px;
+  font-weight: 400;
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.nav-link{
+  list-style-type: none;
+
+}
+
+.active {
+  border-bottom: 5px solid black;
+}
+
+
+/* ARRIVALS AND DEPARTURES*/ 
+td {
+  width: 400px;
+}
+
+table{
+  margin: 0px 0px 0px 20px;
+}
+
+.dashboard h1{
+  color: lightblue;
+  font-size: 25px;
+  margin-top: 30px;
+  margin-bottom: 25px;
+
+}
+
+.zaracho{
+  display: none;
+}
+
+
+/* LANDING PAGE */
+.login-landing{
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+.register-landing{
+  border-radius: 10px;
+}
+
+.login-landing:hover{
+  background-color: black;
+}
+
+
+
+.register-landing:hover{
+  background-color: black;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .zaracho{
+    display: block;
+  }
 }
