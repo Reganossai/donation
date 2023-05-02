@@ -18,6 +18,8 @@ const Login = () => {
     }).then((response)=> {
       if(response.data.message){
         setLoginStatus(response.data.message)
+      localStorage.setItem('token',response.data.token);
+      
       }
       else(
         history.push('/dashboard')

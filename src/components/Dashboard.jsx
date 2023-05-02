@@ -2,6 +2,8 @@ import React from "react";
 import Navbar from "./Navbar";
 import Arrivaltable from "./Arrivaltable";
 import Departuretable from "./Departuretable";
+import {useHistory} from "react-router-dom";
+
 
 const Dashboard = () => {
   return (

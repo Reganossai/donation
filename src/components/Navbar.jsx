@@ -5,12 +5,20 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { Link, NavLink } from "react-router-dom";
 import { useState } from "react";
 import image from "../assets/images.png";
+import {useHistory} from "react-router-dom";
+
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const handleNav = () => {
     setNav(!nav);
   };
+  
+  let history =useHistory();
+
+  const Logout = () => {
+    history.push('/')
+  }
 
   nav
     ? (document.body.style.overflow = "hidden")
@@ -41,6 +49,12 @@ const Navbar = () => {
             <NavLink activeClassName="active" to="/departures">
               Departures
             </NavLink>
+          </li>
+
+          <li className="nav-link">
+            <button onClick={Logout}>
+              logout
+            </button>
           </li>
         </ul>
       </div>
