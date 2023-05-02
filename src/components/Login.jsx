@@ -1,47 +1,75 @@
 import React, { useState } from "react";
 import aeroplane from "../assets/aeroplane.jpg";
+import Axios from "axios";
+import {useHistory} from "react-router-dom";
+
 
 const Login = () => {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  const [emailLogin, setEmailLogin] = useState("");
+  const [passwordLogin, setPasswordLogin] = useState("");
+  const [loginStatus, setLoginStatus] = useState("");
+  let history = useHistory();
 
-  const handleSubmit = (e) => {
+  const handleLogin = (e) => {
     e.preventDefault();
-    console.log(email); 
-
-  }
+    Axios.post("http://localhost:8080/login", {
+      email: emailLogin,
+      password: passwordLogin,
+    }).then((response)=> {
+      if(response.data.message){
+        setLoginStatus(response.data.message)
+      }
+      else(
+        history.push('/dashboard')
+      )
+    })
+  };
   return (
     <div>
       <h1>Login</h1>
-      <form onSubmit={handleSubmit}>
+      <form>
         <div className="form-group">
           <label for="inputUsername">Username</label>
           <input
             type="text"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
+            name="emailLogin"
+            value={emailLogin}
+            onChange={(e) => {
+              setEmailLogin(e.target.value);
+            }}
             className="form-control"
             id="inputEmail"
             placeholder="Enter Email"
           />
+          {/* {errors.email && <span>{errors.email}</span>} */}
         </div>
         <div className="form-group">
           <label for="inputPassword">Password</label>
           <input
             type="password"
             className="form-control"
-            value={password}
-            onChange={(e)=> setPassword(e.target.value)}
+            name="passwordLogin"
+            value={passwordLogin}
+            onChange={(e) => {
+              setPasswordLogin(e.target.value);
+            }}
             id="inputPassword"
             placeholder="Password"
           />
+          {/* {errors.password && <span>{errors.password}</span>} */}
           <small id="passwordHelp" className="form-text text-muted">
             We'll never share your password with anyone else.
           </small>
         </div>
-        <button type="submit" id="sub-btn" className="btn btn-primary">
+        <button
+          onClick={handleLogin}
+          type="submit"
+          id="sub-btn"
+          className="btn btn-primary"
+        >
           Login
         </button>
+        <h1>{loginStatus}</h1>
       </form>
 
       <div className="background">
@@ -49,6 +77,6 @@ const Login = () => {
       </div>
     </div>
   );
-}
+};
 
 export default Login;
