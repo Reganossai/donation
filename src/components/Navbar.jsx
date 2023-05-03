@@ -1,24 +1,23 @@
-import React from "react";
+import React, { useCallback } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { Link, NavLink } from "react-router-dom";
 import { useState } from "react";
 import image from "../assets/images.png";
-import {useHistory} from "react-router-dom";
 
 
-const Navbar = () => {
+const Navbar = ({handleLogout}) => {
   const [nav, setNav] = useState(false);
   const handleNav = () => {
     setNav(!nav);
   };
-  
-  let history =useHistory();
 
-  const Logout = () => {
-    history.push('/')
-  }
+  
+
+  const Logout = useCallback(() => {
+    handleLogout()
+  },[handleLogout])
 
   nav
     ? (document.body.style.overflow = "hidden")
@@ -34,6 +33,7 @@ const Navbar = () => {
       </div>
       <div id="navbarSupportedContent">
         <ul>
+
           <li className="nav-link">
             <NavLink exact activeClassName="active" to="/">
               Home
@@ -52,7 +52,7 @@ const Navbar = () => {
           </li>
 
           <li className="nav-link">
-            <button onClick={Logout}>
+            <button className="btn btn-info" onClick={Logout}>
               logout
             </button>
           </li>
@@ -61,16 +61,29 @@ const Navbar = () => {
       {nav ? (
         <div id="navbarSupportedContentMobile">
           <ul>
-            <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="#">
-                HOME
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#">
-                ABOUT
-              </a>
-            </li>
+          <li className="nav-link">
+            <Link exact ClassName="activee" to="/">
+              Home
+            </Link>
+          </li>
+          <li className="nav-link">
+            <Link ClassName="activee" to="/arrivals">
+              Arrivals
+            </Link>
+          </li>
+
+          <li className="nav-link">
+            <Link ClassName="activee" to="/departures">
+              Departures
+            </Link>
+          </li>
+
+          <li className="nav-link">
+            <button className="btn btn-info" onClick={Logout}>
+              logout
+            </button>
+          </li>
+
           </ul>
         </div>
       ) : null}

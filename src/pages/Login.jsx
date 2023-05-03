@@ -1,33 +1,24 @@
 import React, { useState } from "react";
 import aeroplane from "../assets/aeroplane.jpg";
-import Axios from "axios";
-import {useHistory} from "react-router-dom";
+import { fetchUserByEmailAndPassword } from "../database";
+import { Link } from "react-router-dom";
 
-
-const Login = () => {
+const Login = ({ handleToken }) => {
   const [emailLogin, setEmailLogin] = useState("");
   const [passwordLogin, setPasswordLogin] = useState("");
   const [loginStatus, setLoginStatus] = useState("");
-  let history = useHistory();
 
   const handleLogin = (e) => {
     e.preventDefault();
-    Axios.post("http://localhost:8080/login", {
-      email: emailLogin,
-      password: passwordLogin,
-    }).then((response)=> {
-      if(response.data.message){
-        setLoginStatus(response.data.message)
-      localStorage.setItem('token',response.data.token);
-      
-      }
-      else(
-        history.push('/dashboard')
-      )
-    })
+    const loggedInUser = fetchUserByEmailAndPassword(emailLogin, passwordLogin);
+    if (loggedInUser) {
+      handleToken(loggedInUser.token);
+    } else {
+      setLoginStatus("Wrong email or password combination");
+    }
   };
   return (
-    <div>
+    <div className="login-div">
       <h1>Login</h1>
       <form>
         <div className="form-group">
@@ -43,7 +34,6 @@ const Login = () => {
             id="inputEmail"
             placeholder="Enter Email"
           />
-          {/* {errors.email && <span>{errors.email}</span>} */}
         </div>
         <div className="form-group">
           <label for="inputPassword">Password</label>
@@ -58,11 +48,12 @@ const Login = () => {
             id="inputPassword"
             placeholder="Password"
           />
-          {/* {errors.password && <span>{errors.password}</span>} */}
           <small id="passwordHelp" className="form-text text-muted">
             We'll never share your password with anyone else.
           </small>
         </div>
+
+        <h1 className="guk">{loginStatus}</h1>
         <button
           onClick={handleLogin}
           type="submit"
@@ -71,7 +62,11 @@ const Login = () => {
         >
           Login
         </button>
-        <h1>{loginStatus}</h1>
+        <br />
+
+        <div className="kupa">
+          <Link to="/register">Don't have an account yet? Sign up here</Link>
+        </div>
       </form>
 
       <div className="background">

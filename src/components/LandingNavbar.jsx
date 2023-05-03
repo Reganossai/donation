@@ -27,11 +27,6 @@ const LandingNavbar = () => {
         <div id="navbarSupportedContent">
           <ul>
             <li className="nav-link">
-              <NavLink exact activeClassName="disabled" to="/">
-                Home
-              </NavLink>
-            </li>
-            <li className="nav-link">
                 <button className="login-landing">
               <NavLink  to="/login">
                 Login
@@ -51,16 +46,21 @@ const LandingNavbar = () => {
         {nav ? (
           <div id="navbarSupportedContentMobile">
             <ul>
-              <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#">
-                  HOME
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">
-                  ABOUT
-                </a>
-              </li>
+            <li className="nav-link">
+                <button className="login-landing">
+              <Link  to="/login">
+                Login
+              </Link>
+              </button>
+            </li>
+
+            <li className="nav-link">
+                <button className="register-landing">
+              <NavLink  to="/register">
+                Register
+              </NavLink>
+              </button>
+            </li>
             </ul>
           </div>
         ) : null}
