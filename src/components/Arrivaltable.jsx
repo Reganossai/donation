@@ -2,7 +2,7 @@ import React from 'react'
 
 const Arrivaltable = () => {
   return (
-    <div>
+    <div >
          <table>
         <tr>
           <th>Time</th>

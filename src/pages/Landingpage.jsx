@@ -6,9 +6,7 @@ const Landingpage = () => {
   return (
     <div className="landingpage-div">
       <LandingNavbar />
-      <div>
-        <img src={airplane} className="airplane" alt="airplane" />
-      </div>
+      <div className="bg"> </div>
       <div className="homepage">
         <h1>
           <b> Hello,</b>

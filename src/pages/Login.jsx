@@ -19,7 +19,9 @@ const Login = ({ handleToken }) => {
   };
   return (
     <div className="login-div">
-      <h1>Login</h1>
+      <div class="bg"></div>
+      <div className="bgg">
+        <h1>Login</h1>
       <form>
         <div className="form-group">
           <label for="inputUsername">Username</label>
@@ -48,7 +50,7 @@ const Login = ({ handleToken }) => {
             id="inputPassword"
             placeholder="Password"
           />
-          <small id="passwordHelp" className="form-text text-muted">
+          <small id="passwordHelp" className="passwordHelp">
             We'll never share your password with anyone else.
           </small>
         </div>
@@ -68,10 +70,11 @@ const Login = ({ handleToken }) => {
           <Link to="/register">Don't have an account yet? Sign up here</Link>
         </div>
       </form>
-
+      </div>
+{/*             
       <div className="background">
         <img src={aeroplane} alt="aeroplane" />
-      </div>
+      </div> */}
     </div>
   );
 };

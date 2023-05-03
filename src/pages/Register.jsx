@@ -33,6 +33,8 @@ const Register = () => {
 
   return (
     <div className="register-div">
+      <div class="bg"></div>
+      <div className="bgg">
       <h1>Sign Up</h1>
       {success ? (
         <>
@@ -134,9 +136,8 @@ const Register = () => {
           <Link to="/login">Already have an account? sign in</Link>
           </div>
         </form>
+        
       )}
-      <div className="background">
-        <img src={aeroplane} alt="aeroplane" />
       </div>
     </div>
   );

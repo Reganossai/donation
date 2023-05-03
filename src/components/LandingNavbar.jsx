@@ -47,7 +47,7 @@ const LandingNavbar = () => {
           <div id="navbarSupportedContentMobile">
             <ul>
             <li className="nav-link">
-                <button className="login-landing">
+                <button id="login-landing" className="btn btn-info">
               <Link  to="/login">
                 Login
               </Link>
@@ -55,7 +55,7 @@ const LandingNavbar = () => {
             </li>
 
             <li className="nav-link">
-                <button className="register-landing">
+                <button id="register-landing" className="btn btn-info">
               <NavLink  to="/register">
                 Register
               </NavLink>
