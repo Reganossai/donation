@@ -11,10 +11,10 @@ const Dashboard = ({ handleLogout}) => {
     <div className="dashboard">
       <Navbar  handleLogout={handleLogout}/>  
       <hr/>
-      <h2>Arrivals</h2>
+      <h2>Arrivals(Frankfurt International Airport (EDDF))</h2>
       <Arrivaltable />
 
-      <h2>Departures</h2>
+      <h2>Departures(Frankfurt International Airport (EDDF))</h2>
       <Departuretable/>
       <Footer/>
     </div>

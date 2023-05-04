@@ -222,13 +222,17 @@ nav {
 }
 
 
-td {
-  width: 400px;
+td,
+th{
+  width: 300px;
+  text-align: center;
+  border: 1px solid black;
+  padding: 5px;
 }
 
 table {
+  border-spacing: 0 15px;
   margin: 0px 0px 0px 30px;
-
 }
 
 .dashboard h2 {
@@ -402,7 +406,7 @@ table {
   }
 
   table {
-    margin: 0px 3px 30px 3px;
+    margin: 0px 10px 30px 10px;
   }
 
   .dashboard {

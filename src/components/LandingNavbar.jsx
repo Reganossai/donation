@@ -28,17 +28,17 @@ const LandingNavbar = () => {
           <ul>
             <li className="nav-link">
                 <button className="login-landing">
-              <NavLink  to="/login">
+              <Link  to="/login">
                 Login
-              </NavLink>
+              </Link>
               </button>
             </li>
 
             <li className="nav-link">
                 <button className="register-landing">
-              <NavLink  to="/register">
+              <Link  to="/register">
                 Register
-              </NavLink>
+              </Link>
               </button>
             </li>
           </ul>

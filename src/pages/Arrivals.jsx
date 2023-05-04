@@ -8,7 +8,7 @@ const Arrivals = ({handleLogout}) => {
       <div className="arrival-div">
         <Navbar handleLogout={handleLogout}/>
       <hr/>
-      <h5>Arrivals</h5>
+      <h5>Arrivals (Frankfurt International Airport (EDDF))</h5>
       <Arrivaltable/>
       <Footer/>
 
