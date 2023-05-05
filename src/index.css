@@ -247,26 +247,18 @@ table {
   display: none;
 }
 
-
-/* LANDING PAGE */
-.login-landing {
-  border-radius: 10px;
-  margin-right: 10px;
+#login-landing{
+  margin-right: 20px;
 }
 
-.register-landing {
-  border-radius: 10px;
+#login-landing a{
+  color: white;
 }
 
-.login-landing:hover {
-  background-color: black;
+#register-landing a{
+  color: black;
 }
 
-
-
-.register-landing:hover {
-  background-color: black;
-}
 
 .footer-div {
   background-color: black;
@@ -449,21 +441,7 @@ table {
     color: black;
   }
 
-  .login-landing {
-    border-radius: 10px;
-    padding: 0px 5px 5px 5px;
-    background-color: #B6D0E2;
-
-  }
-
-  .register-landing {
-    border-radius: 10px;
-    padding: 0px 5px 5px 5px;
-    background-color: #B6D0E2;
-
-
-  }
-
+  
   .register-div {
     width: 100%;
     margin: 0 auto;

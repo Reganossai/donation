@@ -27,7 +27,7 @@ const LandingNavbar = () => {
         <div id="navbarSupportedContent">
           <ul>
             <li className="nav-link">
-                <button className="login-landing">
+                <button id="login-landing" className="btn btn-danger">
               <Link  to="/login">
                 Login
               </Link>
@@ -35,7 +35,7 @@ const LandingNavbar = () => {
             </li>
 
             <li className="nav-link">
-                <button className="register-landing">
+                <button id="register-landing" className="btn btn-warning">
               <Link  to="/register">
                 Register
               </Link>
