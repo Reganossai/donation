@@ -12,7 +12,7 @@ const Departuretable = () => {
       setLoading(true);
       setErrorMessage("");
       const res = await axios.get(
-        "https://opensky-network.org/api/flights/arrival?airport=EDDF&begin=1517227200&end=1517230800"
+        "https://opensky-network.org/api/flights/departure?airport=EDDF&begin=1517227200&end=1517230800"
       );
       setFlights(res.data);
       console.log(res.data);
@@ -42,17 +42,17 @@ const Departuretable = () => {
               <th>ICAO addess of transponder</th>
               <th>Estimated time of arrival(unix format)</th>
               <th>Call Sign</th>
-              <th>ICAO code of the estimated departure airport</th>
+              <th>ICAO code of the estimated arrival airport</th>
             </tr>
       </table>
       {flights.map(flight => (
         <div key={flight.id}>
           <table>
             <tr>
-              <td>{flight.icao24}</td>
-              <td>{flight.lastSeen}</td>
-              <td>{flight.callsign}</td>
-              <td>{flight.estArrivalAirport}</td>
+                <td>{flight.icao24}</td>
+                <td>{flight.lastSeen}</td>
+                <td>{flight.callsign}</td>
+                <td>{flight.estArrivalAirport}</td>
             </tr>
           </table>
         </div>

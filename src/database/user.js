@@ -22,6 +22,7 @@ export const saveUserOnRegister = (userDetails) => {
     if (user) {
       return "User with this email already exists";
     }
+    
 
     allUsers.push({
       ...userDetails,

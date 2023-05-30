@@ -1,5 +1,4 @@
 import React, { useCallback, useState } from "react";
-import aeroplane from "../assets/aeroplane.jpg";
 import { saveUserOnRegister } from "../database";
 import { Link } from "react-router-dom";
 

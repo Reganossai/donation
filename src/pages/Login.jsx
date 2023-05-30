@@ -71,10 +71,6 @@ const Login = ({ handleToken }) => {
         </div>
       </form>
       </div>
-{/*             
-      <div className="background">
-        <img src={aeroplane} alt="aeroplane" />
-      </div> */}
     </div>
   );
 };
