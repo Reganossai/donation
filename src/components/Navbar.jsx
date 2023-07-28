@@ -24,79 +24,81 @@ const Navbar = ({handleLogout}) => {
     : (document.body.style.overflow = "auto");
 
   return (
-  <div>
-     <nav className="navbar navbar-expand-lg">
-      <div className="logo-div">
-        <Link to="/">
-          <img src={image} className="logoo" alt="logoo" />
-        </Link>
-      </div>
-      <div id="navbarSupportedContent">
-        <ul>
+    <nav className="navbar navbar-expand-lg">
+    <div className="logo-div">
+      <Link className="logo-links" to="/">
+        <img src="https://allgodschildren.org/wp-content/uploads/2018/12/all-gods-children-logo@2x.png"  className="nav-img" alt="kink"/>
+        
+      </Link>
+    </div>
+    <div id="navbarSupportedContent">
+      <ul>
+      <li>
+          <NavLink exact activeClassName="active" to="/" id="menu-links">
+            ABOUT US
+          </NavLink>
+        </li>
+        <li>
+          <NavLink activeClassName="active" to="/signup" id="menu-links">
+            DISCOVER
+          </NavLink>
+        </li>
+        <li className="nav-link">
+          <NavLink activeClassName="active" to="/signin" id="menu-links">
+            CHILD SPONSORSHIP          </NavLink>
+        </li>
 
-          <li className="nav-link">
-            <NavLink exact activeClassName="active" to="/">
-              Home
-            </NavLink>
-          </li>
-          <li className="nav-link">
-            <NavLink activeClassName="active" to="/arrivals">
-              Arrivals
-            </NavLink>
-          </li>
+        <li className="nav-link">
+          <NavLink activeClassName="active" to="/prod" id="menu-links">
+            INTERNATIONAL ADOPTION
+          </NavLink>
+        </li>
 
-          <li className="nav-link">
-            <NavLink activeClassName="active" to="/departures">
-              Departures
-            </NavLink>
-          </li>
+        <li>
+          <button id="adoption-bt" className="btn btn-primary">ADOPTION PRE-APP</button>
+        </li>
+        
+        <li>
+          <button  id="donate-bt" className="btn btn-danger">DONATE</button>
+        </li>
 
-          <li className="nav-link">
-            <button className="btn btn-info" onClick={Logout}>
-              logout
-            </button>
-          </li>
+       
         </ul>
-      </div>
-      {nav ? (
-        <div id="navbarSupportedContentMobile">
-          <ul>
-          <li className="nav-link">
-            <Link exact ClassName="activee" to="/">
-              Home
+    </div>
+   
+    {nav ? (
+      <div id="navbarSupportedContentMobile">
+        <ul>
+          <li>
+            <Link to="/signup" id="menu-links">
+              REGISTER
             </Link>
           </li>
           <li className="nav-link">
-            <Link ClassName="activee" to="/arrivals">
-              Arrivals
-            </Link>
-          </li>
-
-          <li className="nav-link">
-            <Link ClassName="activee" to="/departures">
-              Departures
+            <Link to="/signin" id="menu-links">
+              SIGN IN
             </Link>
           </li>
 
           <li className="nav-link">
-            <button className="btn btn-info" onClick={Logout}>
-              logout
-            </button>
+            <Link to="/prod" id="menu-links">
+              PRODUCTS
+            </Link>
           </li>
 
+      
           </ul>
-        </div>
-      ) : null}
-
-      <div onClick={handleNav} className="zaracho">
-        {nav ? (
-          <FontAwesomeIcon icon={faXmark} />
-        ) : (
-          <FontAwesomeIcon icon={faBars} />
-        )}
       </div>
-    </nav>
-  </div>
+    ) : null}
+
+    <div onClick={handleNav} className="zaracho">
+      {nav ? (
+        <FontAwesomeIcon icon={faXmark} />
+      ) : (
+        <FontAwesomeIcon icon={faBars} />
+      )}
+    </div>
+  </nav>
   );
 };
 

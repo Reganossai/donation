@@ -1,499 +1,190 @@
-* {
-  margin: 0px;
-  padding: 0px;
-  overflow-x: hidden;
+*{
+  padding: 0;
+  margin: 0;
 }
 
-
-
-hr {
-  width: 1100px;
-  margin-left: 110px;
-  margin-top: -15px;
-
+#navbarSupportedContent{
+  margin: 30px 0px 0px 150px;
 }
 
-.homepage {
-  display: none;
-}
-
-
-.guk {
-  color: darkred;
-  font-size: 20px;
-}
-
-.login-div {
-  position: relative;
-  z-index: 1;
-  margin-top: -20px;
-  width: 100%;
-  height: 150vh;
-}
-
-.landingpage-div{
-  position: relative;
-  z-index: 1;
-  margin-top: -20px;
-  width: 100%;
-  height: 150vh;
-}
-
-.landingpage-div .bg{
-  position: absolute;
-  z-index: -1;
-  height: 100%;
-  width: 100%;
-  background-image: url("./assets/ae.jpg");
-  background-size: cover;
-  background-position: center;
-  object-fit: fill;
-  opacity: 0.2;
-}
-
-
-
-
-
-.register-div {
-  position: relative;
-  z-index: 1;
-  margin-top: -20px;
-  width: 100%;
-  height: 150vh;
-}
-
-.register-div .bg{
-  position: absolute;
-  z-index: -1;
-  height: 100%;
-  width: 100%;
-  background-image: url("./assets/airr.jpg");
-  background-size: cover;
-  background-position: center;
-  object-fit: fill;
-  opacity: 0.6;
-}
-
-
-#passwordHelp{
-  color: black;
-}
-
-.login-div .bg {
-  position: absolute;
-  z-index: -1;
-  height: 100%;
-  width: 100%;
-  background-image: url("./assets/airr.jpg");
-  background-size: cover;
-  background-position: center;
-  object-fit: fill;
-  opacity: 0.6;
-}
-
-.login-div .bgg {
-  position: relative;
-  z-index: 1;
-}
-
-
-
-.kug {
-  color: green;
-}
-
-.kuga {
-  margin: 50px 0px 0px 580px;
-
-}
-
-.kuga a {
-  text-decoration: none;
-  
-
-}
-
-.kupa {
-  margin: 10px 0px 0px 400px;
-  
-}
-
-.kupa a{
-  color: black;
-}
-
-.background {
-  position: absolute;
-  top: 0;
-  z-index: -1;
-}
-
-.background img {
-  width: 100%;
-  height: 100%;
-  opacity: 0.4;
-}
-
-.airplane {
-  width: 1000px;
-  opacity: 0.2;
-  margin: 0px 0px 0px 100px;
-}
-
-.form-group {
-  z-index: 99;
-  margin: 0px 0px 0px 400px;
-  position: relative;
-}
-
-.form-group input {
-  width: 500px;
-}
-
-h1 {
-  margin: 20px 0px 0px 550px;
-}
-
-#sub-btn {
-  margin: 20px 0px 0px 400px;
-}
-
-
-
-/* DASHBOARD */
-
-.logoo {
-  width: 120px;
-}
-
-nav {
+#navbarSupportedContent ul{
   display: flex;
-  flex-direction: row;
-  
-}
-
-.navbar-questions-solutions {
-  display: flex;
-  flex-direction: column;
 
 }
 
-.logo-div {
-  margin: 0px 0px 0px 20px;
-}
 
-#navbarSupportedContent {
-  margin: 5px 0px 0px 650px;
-}
-
-#navbarSupportedContent ul {
-  display: flex;
-  flex-direction: row;
-}
-
-#navbarSupportedContent a {
-  text-decoration: none;
-  margin: 0px 10px 0px 10px;
-  padding: 7px 15px 7px 15px;
-  font-weight: 400;
-  font-size: 20px;
-  font-family: 'Times New Roman', Times, serif;
-}
-
-.nav-link {
+#navbarSupportedContent li{
+  width: 100px;
+  margin: 0px 50px 0px 0px;
   list-style-type: none;
-
 }
 
-.active {
-  border-bottom: 5px solid black;
+#navbarSupportedContent a{
+  color: #808080;
+  font-size: 17px;
+  text-decoration: none;
 }
 
-
-/* ARRIVALS AND DEPARTURES*/
-.arrival-div h5 {
-  display: none;
-}
-
-.departure-div h5 {
-  display: none;
-
-}
-
-
-td,
-th{
-  width: 300px;
-  text-align: center;
-  border: 1px solid black;
-  padding: 5px;
-}
-
-table {
-  border-spacing: 0 15px;
+.nav-img{
+  width: 150px;
   margin: 0px 0px 0px 30px;
+  
 }
 
-.dashboard h2 {
-  color: #B6D0E2;
+#adoption-bt{
+  width: 200px;
+}
+
+#donate-bt{
+  margin: 0px 0px 0px 60px;
+ 
+}
+
+.home-pic{
+  width: 100%;
+  height: 90vh;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+.picture-text{
+  width: 500px;
+  position: absolute;
+  left: 800px;
+  top: 150px;
+  z-index: 1;
+}
+
+.picture-text h1{
+  font-weight: bold;
+  font-size: 50px;
+}
+
+#sponsor-bt{
+  padding: 20px 50px 20px 50px;
+  margin: 20px 0px 0px 0px;
+  border-radius: 40px;
+}
+
+.all-God{
+  background-color: #96DED1;  
+  color:#4169E1;
+}
+
+
+.all-God h1{
   font-size: 25px;
   text-align: center;
-  margin: 30px 0px 25px 0px;
+  margin: 0px 300px 0px 300px;  
+  padding: 30px 0px 35px 0px;
 
+  
 }
 
-.zaracho {
-  display: none;
+.all-God-sub{
+  font-weight: thin;
+  font-family: monospace
 }
 
-#login-landing{
-  margin-right: 20px;
-}
-
-#login-landing a{
-  color: white;
-}
-
-#register-landing a{
-  color: black;
+.intervene{
+background-color: #6495ED;
 }
 
 
-.footer-div {
-  background-color: black;
+.intervene h1{
+  font-size: 45px;
+  text-align: center;
+  margin: 0px 300px 0px 300px;  
+  padding: 30px 0px 35px 0px;
+}
+
+.red{
+  color: crimson;
+}
+
+.eight-mill{
+  font-weight: bold;
+
+}
+
+.we-do{
+
+  padding: 0px 0px 80px 0px;
+}
+
+.we-do h1{
+  text-align: center;
+  color: crimson;
+  margin: 80px 0px 0px 0px;
+}
+
+.we-do-sub{
   display: flex;
-  flex-direction: row;
-  margin-top: 100px;
-  height: 380px;
 }
 
-.footer-div h1 {
-  margin: 20px 0px 0px 80px;
-  width: 800px;
-  font-family: courier;
+.we-do-sub img{
+  width: 150px;
+  margin: 60px 0px 20px 30px;
 }
 
-.footer-div img {
-  width: 100px;
-  height: 80px;
-  border-radius: 20px;
-  margin: 20px 0px 10px 50px;
+.we-do-sub p{
+  width: 230px;
+  font-size: 20px;
+  color: #A9A9A9;
+}
+
+.we-do-sub-sub{
+  margin: 0px 20px 0px 20px;
 
 }
 
+.this-work{
+  background-color: #96DED1;  
+ height: 150px;
+ padding: 50px 0px 0px 0px;
+}
 
-@media only screen and (max-width: 800px) {
-  .zaracho {
-    display: block;
-    margin-right: 40px;
-  }
+.this-work h1{
+  text-align: center;
+  font-size: 45px;
+  font-weight: bold;
+  color:#4169E1;
+}
 
-  .arrival-div{
-    width: 100%;
-    height: 250vh;
-    overflow-y: hidden;
-  }
+.berh{
+  display: flex;
+  background-color: #0096FF;
 
-  .arrival-div h5 {
-    display: block;
-    color: #B6D0E2;
-    margin: 15px 0px 15px 130px;
+}
 
-  }
+.berh img{
+  margin: 70px 0px 0px 20px;
+}
 
-  .departure-div h5 {
-    display: block;
-    color: #B6D0E2;
-    margin: 15px 0px 15px 130px;
+.berhe{
+  width: 520px;
+  height: 280px;
+}
 
-  }
-
-  .logo-div img {
-    width: 100px;
-    border-radius: 20px;
-  }
-
-  #navbarSupportedContent {
-    display: none;
-  }
-
-  #navbarSupportedContentMobile {
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    top: 95px;
-    left: 0;
-    right: 0;
-    z-index: 99;
-    margin: 0 auto;
-    width: 100%;
-    height: 100vh;
-    background-color: whitesmoke;
-  
-  }
-
-  #navbarSupportedContentMobile li a {
-    color: darkblue;
-    text-decoration: none;
-    margin: 30px 0px 30px 0px;
-    border-width: 400px;
-  }
-
-  #navbarSupportedContentMobile button {
-    margin: 10px 0px 30px 0px;
+.berh-sub{
+  width: 700px;
+  margin: 20px 0px 0px 100px;
+}
 
 
-  }
+.berh-sub h1{
+  font-family: monospace;
+  font-size: 40px;
+  color: whitesmoke;
 
-  .landingpage-div{
-    width: 100%;
-    height: 100vh;
-    margin: 0 auto;
-    
-
-  }
-
-  .homepage {
-    display: block;
-    width: 380px;
-    margin: 25px 0px 0px 20px;
-  }
-
-  .homepage h1 {
-    margin: 0px 0px 10px 0px;
-    font-size: 38px;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-
-  .homepage h2 {
-    margin: 0px 0px 10px 0px;
-    font-size: 35px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #B6D0E2;
-  }
-
-  .homepage h3 {
-    width: 340px;
-    font-size: 17px;
-    color: #808080;
-  }
+}
+.berh-sub p{
+  font-family: monospace;
+  font-size: 18px;
+  color: whitesmoke;
+}
 
 
+.berh-sub p{
 
-
-  hr {
-    display: none;
-  }
-
-  nav {
-    background-color: #B6D0E2;
-    width: 100%;
-    margin: 0 auto;
-  }
-
-  td {
-    width: 500px;
-
-  }
-
-  table {
-    margin: 0px 10px 30px 10px;
-  }
-
-  .dashboard {
-    width: 100%;
-    height: 300vh;
-
-  }
-
-  .footer-div {
-    display: flex;
-    flex-direction: column;
-    margin: 0px auto;
-    height: 800px;
-    padding-bottom: 80px;
-    width: 100%;
-  }
-
-  .footer-div h1 {
-    margin: 20px 5px 0px 5px;
-    width: 390px;
-    font-family: courier;
-    color: antiquewhite;
-    font-size: 20px;
-  }
-
-  .footer-div img {
-    width: 100px;
-    height: 80px;
-    border-radius: 20px;
-    margin: 20px 0px 20px 120px;
-
-  }
-
-
-  .airplane {
-    display: none;
-  }
-
-  .nav-link a {
-    color: black;
-  }
-
-  
-  .register-div {
-    width: 100%;
-    margin: 0 auto;
-    height: 100vh;
-    padding: 0px 10px 0px 0px;
-  }
-
-  .register-div h1 {
-    margin: 0px 0px 20px 130px;
-    padding-top: 40px;
-  }
-
-  .login-div {
-    width: 100%;
-    margin: 0 auto;
-    height: 100vh;
-    padding: 0px 10px 0px 0px;
-  }
-
-  
-  .login-div h1 {
-    margin: 0px 0px 20px 160px;
-    padding-top: 40px;
-  }
-
-  .form-group {
-    margin: 0px 0px 0px 10px;
-    
-  }
-
-  .form-group input {
-    width: 380px;
-  }
-
-  #sub-btn {
-    margin: 0px 0px 0px 10px;
-  }
-
-  .kupa {
-    margin: 10px 0px 0px 10px;
-    
-  }
-
-  .guk {
-    color: darkred;
-    font-size: 15px;
-    
-  }
-
-
-
-  .kuga {
-    margin: 50px 0px 0px 100px;
-  }
 }
