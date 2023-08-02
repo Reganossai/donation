@@ -13,11 +13,7 @@ const Navbar = ({handleLogout}) => {
     setNav(!nav);
   };
 
-  
 
-  const Logout = useCallback(() => {
-    handleLogout()
-  },[handleLogout])
 
   nav
     ? (document.body.style.overflow = "hidden")
@@ -71,18 +67,25 @@ const Navbar = ({handleLogout}) => {
         <ul>
           <li>
             <Link to="/signup" id="menu-links">
-              REGISTER
+              ABOUT US
             </Link>
           </li>
           <li className="nav-link">
             <Link to="/signin" id="menu-links">
-              SIGN IN
+              DISCOVER 
             </Link>
           </li>
 
           <li className="nav-link">
+            <Link to="/sponsor" id="menu-links">
+              CHILD SPONSORSHIP
+            </Link>
+          </li>
+
+          
+          <li className="nav-link">
             <Link to="/prod" id="menu-links">
-              PRODUCTS
+              INTERNATIONAL ADOPTION
             </Link>
           </li>
 

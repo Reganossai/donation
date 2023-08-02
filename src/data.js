@@ -12,6 +12,7 @@ export const totalChildren = [
     food: "Potato",
     grade: 3,
     profession: "Pilot",
+    gender: "boy"
   },
   {
     id: 2,
@@ -26,6 +27,7 @@ export const totalChildren = [
     food: "Noodles",
     grade: 1,
     profession: "Teacher",
+    gender: "boy"
   },
   {
     id: 3,
@@ -40,6 +42,7 @@ export const totalChildren = [
     food: "Pasta",
     grade: 2,
     profession: "Police Officer",
+    gender: "boy"
   },
   {
     id: 4,
@@ -54,6 +57,7 @@ export const totalChildren = [
     food: "Meat",
     grade: 2,
     profession: "Doctor",
+    gender: "boy"
   },
   {
     id: 5,
@@ -68,6 +72,7 @@ export const totalChildren = [
     food: "Oranges",
     grade: 1,
     profession: "Doctor",
+    gender: "boy"
   },
   {
     id: 6,
@@ -82,6 +87,7 @@ export const totalChildren = [
     food: "Eggs",
     grade: 3,
     profession: "Doctor",
+    gender: "boy"
   },
   {
     id: 7,
@@ -96,6 +102,7 @@ export const totalChildren = [
     food: "Misir",
     grade: 6,
     profession: "Artisit",
+    gender: "boy"
   },
   {
     id: 8,
@@ -110,6 +117,7 @@ export const totalChildren = [
     food: "Misir",
     grade: 2,
     profession: "Pilot",
+    gender: "boy"
   },
   {
     id: 9,
@@ -124,6 +132,7 @@ export const totalChildren = [
     food: "Rice",
     grade: 1,
     profession: "Police",
+    gender: "boy"
   },
   {
     id: 10,
@@ -138,6 +147,7 @@ export const totalChildren = [
     food: "Rice",
     grade: 2,
     profession: "Driver",
+    gender: "boy"
   },
   {
     id: 11,
@@ -152,6 +162,7 @@ export const totalChildren = [
     food: "Spaghetti",
     grade: 6,
     profession: "Soccer Player",
+    gender: "boy"
   },
   {
     id: 12,
@@ -166,6 +177,7 @@ export const totalChildren = [
     food: "Spaghetti",
     grade: 6,
     profession: "Pilot",
+    gender: "boy"
   },
   {
     id: 13,
@@ -180,6 +192,7 @@ export const totalChildren = [
     food: "Pasta",
     grade: 3,
     profession: "Teacher",
+    gender: "boy"
   },
   {
     id: 14,
@@ -194,6 +207,7 @@ export const totalChildren = [
     food: "Cake",
     grade: 3,
     profession: "Pilot",
+    gender: "boy"
   },
   {
     id: 15,
@@ -208,6 +222,7 @@ export const totalChildren = [
     food: "Pasta",
     grade: 3,
     profession: "Doctor",
+    gender: "boy"
   },
   {
     id: 16,
@@ -222,6 +237,7 @@ export const totalChildren = [
     food: "Rice",
     grade: "Kindergarten",
     profession: "Doctor",
+    gender: "boy"
   },
   {
     id: 17,
@@ -236,6 +252,7 @@ export const totalChildren = [
     food: "Spaghetti",
     grade: 1,
     profession: "Doctor",
+    gender: "boy"
   },
   {
     id: 18,
@@ -250,6 +267,7 @@ export const totalChildren = [
     food: "Fifir (Traditional Food)",
     grade: 4,
     profession: "Soccer Player",
+    gender: "boy"
   },
   {
     id: 19,
@@ -264,6 +282,7 @@ export const totalChildren = [
     food: "Cake",
     grade: "Kindergarten",
     profession: "Too early to decide.",
+    gender: "boy"
   },
   {
     id: 20,
@@ -278,6 +297,7 @@ export const totalChildren = [
     food: "Shiro (Traditional Food)Cake",
     grade: 2 ,
     profession: "Doctor",
+    gender: "boy"
   },
   {
     id: 21,
@@ -292,6 +312,7 @@ export const totalChildren = [
     food: "Shiro (Traditional Food)Cake",
     grade: "Kindergarten" ,
     profession: "Pilot",
+    gender: "boy"
   },
   {
     id: 22,
@@ -306,6 +327,7 @@ export const totalChildren = [
     food: "Enjera (Traditional Food)",
     grade: 3 ,
     profession: "Policeman",
+    gender: "boy"
   },
   {
     id: 23,
@@ -320,6 +342,7 @@ export const totalChildren = [
     food: "Meat",
     grade: 2 ,
     profession: "Doctor",
+    gender: "boy"
   },
   {
     id: 24,
@@ -334,6 +357,7 @@ export const totalChildren = [
     food: "Macaroni",
     grade: "Kindergarten",
     profession: "Policeman",
+    gender: "boy"
   },
   {
     id: 25,
@@ -348,6 +372,7 @@ export const totalChildren = [
     food: "Macaroni",
     grade: "Kindergarten",
     profession: "Policeman",
+    gender: "boy"
   },
   {
     id: 26,
@@ -362,6 +387,7 @@ export const totalChildren = [
     food: "Rice",
     grade: 2 ,
     profession: "Pilot",
+    gender: "boy"
   },
   {
     id: 27,
@@ -376,6 +402,7 @@ export const totalChildren = [
     food: "Rice",
     grade: "Kindergarten" ,
     profession: "Doctor",
+    gender: "boy"
   },
   {
     id: 28,
@@ -390,6 +417,7 @@ export const totalChildren = [
     food: "Watermelon",
     grade: 2 ,
     profession: "Pilot",
+    gender: "boy"
   },
   {
     id: 29,
@@ -404,6 +432,7 @@ export const totalChildren = [
     food: "Fifir (Traditional Food)",
     grade: "Kindergarten" ,
     profession: "Soccer Player",
+    gender: "boy"
   },
   {
     id: 30,
@@ -418,6 +447,7 @@ export const totalChildren = [
     food: "Fifir (Traditional Food)",
     grade: "Kindergarten" ,
     profession: "Doctor",
+    gender: "boy"
   },
   {
     id: 31,
@@ -432,6 +462,7 @@ export const totalChildren = [
     food: "Shiro (Traditional Food)",
     grade: 4 ,
     profession: "Soccer Player",
+    gender: "boy"
   },
   {
     id: 32,
@@ -446,6 +477,7 @@ export const totalChildren = [
     food: "Pasta",
     grade: "Kindergarten" ,
     profession: "Pilot",
+    gender: "boy"
   },
   {
     id: 33,
@@ -460,6 +492,7 @@ export const totalChildren = [
     food: "Pasta",
     grade: "Kindergarten" ,
     profession: "Policeman",
+    gender: "boy"
   },
   {
     id: 34,
@@ -474,6 +507,7 @@ export const totalChildren = [
     food: "Egg",
     grade: 2 ,
     profession  : "Doctor",
+    gender: "boy"
   },
   {
     id: 35,
@@ -488,6 +522,7 @@ export const totalChildren = [
     food: "Egg",
     grade: 1 ,
     profession  : "Pilot",
+    gender: "boy"
   },
   {
     id: 36,
@@ -516,6 +551,7 @@ export const totalChildren = [
     food: "Rice",
     grade: 1 ,
     profession  : "Pilot",
+    gender: "boy"
   },
   {
     id: 38,
@@ -530,6 +566,7 @@ export const totalChildren = [
     food: "Eggs",
     grade: "Kindergarten" ,
     profession  : "Doctor",
+    gender: "girl"
   },
   {
     id: 39,
@@ -544,6 +581,7 @@ export const totalChildren = [
     food: "Shiro",
     grade: 1 ,
     profession  : "Doctor",
+    gender: "girl"
   },
   {
     id: 40,
@@ -558,6 +596,7 @@ export const totalChildren = [
     food: "Meat",
     grade: 4 ,
     profession  : "Engineer",
+    gender: "girl"
   },
   {
     id: 41,
@@ -572,6 +611,7 @@ export const totalChildren = [
     food: "Pasta",
     grade: "Kindergarten" ,
     profession  : "leader",
+    gender: "girl"
   },
   {
     id: 42,
@@ -586,6 +626,7 @@ export const totalChildren = [
     food: "Bread",
     grade: "Kindergarten" ,
     profession  : "Doctor",
+    gender: "girl"
   },
   {
     id: 43,
@@ -600,6 +641,7 @@ export const totalChildren = [
     food: "Spaghetti",
     grade: "Kindergarten" ,
     profession  : "Doctor",
+    gender: "girl"
   },
   {
     id: 44,
@@ -614,6 +656,7 @@ export const totalChildren = [
     food: "Fifir (Traditional Food)",
     grade: 1 ,
     profession  : "Lawyer",
+    gender: "girl"
   },
   {
     id: 45,
@@ -628,6 +671,7 @@ export const totalChildren = [
     food: "Pasta",
     grade: 2 ,
     profession  : "Doctor",
+    gender: "girl"
   },
   {
     id: 46,
@@ -642,6 +686,7 @@ export const totalChildren = [
     food: "Rice",
     grade: 2 ,
     profession  : "Teacher",
+    gender: "girl"
   },
   {
     id: 47,
@@ -656,6 +701,7 @@ export const totalChildren = [
     food: "Fish",
     grade: 3 ,
     profession  : "Doctor",
+    gender: "girl"
   },
   {
     id: 48,
@@ -670,6 +716,7 @@ export const totalChildren = [
     food: "Enjera (Traditional Food)",
     grade: "Kindergarten" ,
     profession  : "Teacher",
+    gender: "girl"
   },
   {
     id: 49,
@@ -684,6 +731,7 @@ export const totalChildren = [
     food: "Shiro (Traditional Food)",
     grade: 6 ,
     profession  : "Pilot",
+    gender: "girl"
   },
   {
     id: 50,
@@ -698,6 +746,7 @@ export const totalChildren = [
     food: "Meat",
     grade: 3 ,
     profession  : "Doctor",
+    gender: "girl"
   },
   {
     id: 51,
@@ -712,6 +761,7 @@ export const totalChildren = [
     food: "Rice",
     grade: "Kindergarten" ,
     profession  : "Doctor",
+    gender: "girl"
   },
   {
     id: 52,
@@ -726,6 +776,7 @@ export const totalChildren = [
     food: "Pasta",
     grade: 3 ,
     profession  : "Engineer",
+    gender: "girl"
   },
   {
     id: 53,
@@ -740,6 +791,7 @@ export const totalChildren = [
     food: "Rice",
     grade: "Kindergarten" ,
     profession  : "Pilot",
+    gender: "girl"
   },
   {
     id: 54,
@@ -754,6 +806,7 @@ export const totalChildren = [
     food: "Rice",
     grade: 3 ,
     profession  : "Doctor",
+    gender: "girl"
   }
 
 
