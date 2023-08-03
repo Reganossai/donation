@@ -2,13 +2,14 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
+import bed from "../assets/bed-1.jpeg";
 
 const Home = () => {
   return (
     <div className="homepage-div">
       <Navbar />
       <img
-        src="https://images.unsplash.com/photo-1527443195645-1133f7f28990?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8YmFuZGFuYSUyMHBjJTIwZnVsbCUyMHNjcmVlbiUyMHBpY3R1cmV8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
+        src={bed}
         className="home-pic"
         alt="home"
       />
@@ -157,43 +158,53 @@ const Home = () => {
         <h1>ADOPTION RESOURCES</h1>
         <div className="adoption-sub">
           <div className="adoption-sub-sub">
+           <Link to="/five">
             <img
               src="https://allgodschildren.org/wp-content/uploads/2018/10/top-5-adoption-myths.png"
               alt="cop"
             />
             <h5>TOP 5 REASONS TO CHOOSE AGCI</h5>
+            </Link>
           </div>
 
           <div className="adoption-sub-sub">
+          <Link to="/god-provides">
             <img
               src="https://allgodschildren.org/wp-content/uploads/2018/10/god-provides.png"
               alt="cop"
             />
             <h5>GOD PROVIDES</h5>
+            </Link>
           </div>
 
           <div className="adoption-sub-sub">
+            <Link to="/debunked">
             <img
               src="https://allgodschildren.org/wp-content/uploads/2018/10/debunking-7-most-common-adoption-myths.png"
               alt="cop"
             />
             <h5>DEBUNKING THE 7 MOST COMMON ADOPTION MYTHS</h5>
+            </Link>
           </div>
 
           <div className="adoption-sub-sub">
+            <Link to="/ten">
             <img
               src="https://allgodschildren.org/wp-content/uploads/2018/10/top-10-adoption-questions-answered.png"
               alt="cop"
             />
             <h5>TOP 10 ADOPTION QUESTIONS ANSWERED</h5>
+            </Link>
           </div>
 
           <div className="adoption-sub-sub">
+            <Link to="/myths">
             <img
               src="https://allgodschildren.org/wp-content/uploads/2018/10/top-5-adoption-myths.png"
               alt="cop"
             />
             <h5>TOP 5 MYTHS ABOUT ADOPTION</h5>
+            </Link>
           </div>
         </div>
       </div>
@@ -207,7 +218,7 @@ const Home = () => {
               className="clipboard"
             />
           </span>
-          <Link to="/">SUBMIT A FREE PRE-APP</Link>
+          <Link to="/preapp">SUBMIT A FREE PRE-APP</Link>
         </h1>
       </div>
 <Footer/>
